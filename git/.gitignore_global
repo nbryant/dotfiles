@@ -1,0 +1,8 @@
+# Sublime Text files
+*.sublime*
+
+# Node modules directory
+node_modules
+
+# TODOs
+todo.txt
