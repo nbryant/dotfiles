@@ -1,0 +1,10 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = Nathan Bryant
+	email = nbryant@brookbell.com
+[commit]
+	template = /Users/nbryant/Projects/.gitmessage.txt
+[core]
+	editor = vi
+	excludesfile = /Users/nbryant/Projects/.gitignore_global
