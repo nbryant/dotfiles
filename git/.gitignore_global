@@ -1,8 +1,13 @@
-# Sublime Text files
-*.sublime*
+# VS Code config
+.vscode*
 
-# Node modules directory
-node_modules
+# SublimeText metadata
+*.sublime-*
 
-# TODOs
-todo.txt
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# local tools
+.nathan-stuff

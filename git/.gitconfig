@@ -1,10 +1,32 @@
-[credential]
-	helper = osxkeychain
 [user]
+	signingkey = 989232DA
 	name = Nathan Bryant
-	email = bryant.nathana@gmail.com
-[commit]
-	template = .gitmessage.txt
+	email = nbryant@agari.com
 [core]
-	editor = vi
-	excludesfile = .gitignore_global
+	excludesfile = /Users/nbryant/.gitignore_global
+	editor = vim
+[alias]
+	bname = rev-parse --abbrev-ref HEAD
+	pnb = "!f(){ \
+		git push --set-upstream origin $(git bname); \
+		}; f"
+        rmd = rm $(git ls-files --deleted)
+        d = diff -w --no-prefix
+        dc = diff --cached --no-prefix
+        co = checkout
+        s = status
+        a = add
+        t = commit
+        l = log
+        list = branch --list
+        cpx = cherry-pick -x
+        su = submodule update
+        b = for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(refname:short) -  (%(color:green)%(committerdate:relative)%(color:reset))'
+[diff "ansible-vault"]
+	textconv = PAGER=cat ansible-vault view
+	cachetextconv = false
+[merge "ansible-vault"]
+	name = ansible-vault merge driver
+	driver = /usr/local/bin/ansible-vault-merge -- %O %A %B %P
+[log]
+	date = default
