@@ -1,0 +1,13 @@
+###
+# Bash stuff
+###
+# default ls to use colors and file type indicators
+alias ls='ls -1aFG'
+# use color with grep
+alias grepc='grep --color=always'
+# call chrome from command line
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+# alias git
+alias g='git'
+# ll = ls -l
+alias ll='ls -l'
