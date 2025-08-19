@@ -1,7 +1,5 @@
 [user]
-	signingkey = 989232DA
 	name = Nathan Bryant
-	email = nbryant@agari.com
 [core]
 	excludesfile = /Users/nbryant/.gitignore_global
 	editor = vim
